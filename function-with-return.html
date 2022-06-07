@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+
+            function fullname(fname,lname){   
+                var name=fname+lname;
+                return name;
+            }
+            var fn_name =fullname("Anil ","Saini");
+            document.write(fn_name);
+
+            // Function 2 //
+
+            function sum(a,b,c){
+                var total= a+b+c;
+                return total;
+            }
+
+            function percentage(per){
+                var per_ct=per/300*100;
+                document.write("<br> Percentage is: "+per_ct);
+            }
+            
+            var sum_total=sum(70,75,70);
+            percentage(sum_total);
+           
+        </script>
+    </body>
+</html>
