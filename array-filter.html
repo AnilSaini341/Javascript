@@ -1,0 +1,20 @@
+
+<html>
+    <head></head>
+    <title>Modify/ Delete array</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var age =[12,19,12,20];
+        
+            document.write(age + "<br><br>"); 
+            var b=age.filter(checkAdult); // Array filter Method works with function and return a New array that Passes condition.
+            document.write(b + "<br><br>"); 
+            function checkAdult(age){
+                return age>=18;
+            }
+            
+           
+        </script>
+    </body>
+</html>
