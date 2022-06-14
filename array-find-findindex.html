@@ -1,0 +1,21 @@
+
+<html>
+    <head></head>
+    <title>Modify/ Delete array</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var age =[12,17,12,20];
+        
+            document.write(age + "<br><br>"); 
+            var b=age.find(checkAdult); // find Method works with function and return array value that Pass condition.
+            //var b=age.findIndex(checkAdult); // findIndex Method works with function and return array index value that Pass condition.
+            document.write(b + "<br><br>"); 
+            function checkAdult(age){
+                return age>=18;
+            }
+            
+           
+        </script>
+    </body>
+</html>

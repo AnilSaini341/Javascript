@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <title>Modify/ Delete array</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var a =["Harry","john","Female","BCA","Rahul","Shiv"];
+            var a1 =["Harry","john","Rahul","Shiv"];
+        
+            document.write(a + "<br><br>"); 
+            var b= a.slice(1,5); //Slice method produce a new array with started and end array
+            document.write(b + "<br><br>"); 
+            document.write(a1 + "<br><br>");
+            a1.splice(2,0,"Rohan","raj");//Splice method changes existing array (and contains 3 parameters first for index ,second for remove value or not noted with 0 and 1 and third for values)
+            document.write(a1 + "<br><br>");
+        </script>
+    </body>
+</html>
