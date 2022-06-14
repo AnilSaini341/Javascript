@@ -1,0 +1,35 @@
+
+<html>
+    <head></head>
+    <title>Javascript Object</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var a= [10,20,30,40];
+            var person= [
+                {name:"Anil",lname:"Saini"},
+                {name:"Shiv",lname:"Singh"},
+                {name:"Anoop",lname:"Karhana"}
+            ];
+            
+            console.log(a);
+            console.log(person);
+            
+            var b =a.map(multiply);
+            document.write(b+"<br>");
+            
+            function multiply(val){
+                return val*10;
+            }
+
+            var c=person.map(fullname);
+            document.write(c+"<br>");
+
+            function fullname(x){
+                return x.name+ " "+x.lname;
+            }
+    
+           
+        </script>
+    </body>
+</html>
