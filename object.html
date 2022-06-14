@@ -1,0 +1,33 @@
+
+<html>
+    <head></head>
+    <title>Javascript Object</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var a ={
+                fname:"Anil",
+                lname:"Saini",
+                age:30,
+                movies:["Dhoom","Razz"],
+                email:"saini.anil50@gmail.com",
+                address:{
+                    city:"Faridabad",
+                    country:"India"
+                },
+                salary:function(){
+                    return 20000;
+                },
+                fullname: function(){
+                    return this.fname +" "+ this.lname;
+                }
+            };
+
+            console.log(a);
+            document.write(a.fullname());
+            document.write("<br>" + a.address.city);
+    
+           
+        </script>
+    </body>
+</html>
