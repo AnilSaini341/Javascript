@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var ary =[
+                ["Harry",18,"Female","BCA"],
+                ["Ojha",21,"male","Bcom"],
+                ["Naman",22,"male","BBA"],
+                ["Titu",16,"male","Btech"],
+                ["vikash",16,"Female","Btech"]
+            ];
+
+            document.write("<table border='1px' cellspacing='0'>");
+            for(var a=0; a < ary.length; a++){
+                document.write("<tr> ");
+                for(b=0; b<ary[a].length; b++){
+                    document.write("<td>"+ary[a][b]+"</td>");
+                }
+                document.write("</tr> ");
+            }
+            document.write("</table> ");
+        </script>
+    </body>
+</html>
