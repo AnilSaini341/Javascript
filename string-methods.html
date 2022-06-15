@@ -1,0 +1,35 @@
+
+<html>
+    <head></head>
+    <title>Javascript Object</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var a= "javascript is a great is language";
+            var a1=a.length;  // Length method return string langth
+            document.write(a1+"<br><br>");
+
+            var strupr= a.toUpperCase(); // Method convert string to uppercase
+            document.write(strupr+"<br><br>");
+
+            var strupr= a.toLowerCase(); // Method convert string to lowercase
+            document.write(strupr+"<br><br>");
+
+            var incl= a.includes("great"); // Method a case-sensitive use for searching a word in a string and return true or false.
+            document.write(incl+"<br><br>");
+
+            var starts= a.startsWith("javascript"); // Method a case-sensitive use for searching a first character or word in a string and return true or false.
+            document.write(starts+"<br><br>");
+
+            var ends= a.endsWith("language"); // Method a case-sensitive use for searching the last character or word in a string and return true or false.
+            document.write(ends+"<br><br>");
+
+            var ser= a.search("is"); // Method a case-sensitive use for searching  word in a string. and return position.
+            document.write(ser+"<br><br>");
+           
+            var mach= a.match(/is/g); // Method a case-sensitive use for searching  word in a string. and return array of all matched.
+            document.write(mach+"<br><br>");
+           
+        </script>
+    </body>
+</html>
