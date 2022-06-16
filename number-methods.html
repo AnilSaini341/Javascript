@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <title>Number Functions</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var a= "10";
+            var num=Number(a); // Number convert string data type into number
+            document.write(num+10+"<br>");
+
+            var a1= "10.30";
+            var parseI=parseInt(a1); // parseInt convert decimal to  number
+            document.write(parseI+"<br>");
+
+            var a2= "10.30";
+            var parseF=parseFloat(a2); // parseFloat convert decimal to decimal number
+            document.write(parseF+"<br>");
+
+            var a3= 10.30;
+            var isFinit=isFinite(a3); // isFinite check number is finite or not and return true or false
+            document.write(isFinit+"<br>");
+
+            var a4= "10";
+            var isInteger=Number.isInteger(a4); // isInteger check number is Integer or not and return true or false
+            document.write(isInteger+"<br>");
+
+            var a5= 10.76849;
+            var toFix=a5.toFixed(4); // toFixed returns only fixed decimal points
+            document.write(toFix+"<br>");
+
+            var a6= 10.76849;
+            var toPrecison=a6.toPrecision(4); // toPrecision returns paramter size values
+            document.write(toPrecison+"<br>");
+
+
+
+        </script>
+    </body>
+</html>
