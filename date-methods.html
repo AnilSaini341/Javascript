@@ -1,0 +1,42 @@
+<html>
+    <head></head>
+    <title>Date Functions</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        <script>
+            var now = new Date();
+            document.write(now.toDateString()+"<br>"); //toDateString return readable form of date
+
+            document.write(now.getDate()+"<br>"); //getDate return date only
+
+            document.write(now.getMonth()+"<br>"); //getMonth return Month only
+
+            document.write(now.getFullYear()+"<br>"); //getFullYear return Year only
+
+            document.write(now.getDay()+"<br>"); //getDay return Weekday i.e sun, mon
+
+            document.write(now.getHours()+"<br>"); //getHours return Current Hour
+
+            document.write(now.getMinutes()+"<br>"); //getMinutes return Current Minutes
+
+            document.write(now.getSeconds()+"<br>"); //getSeconds return Current Seconds
+
+            document.write(now.getMilliseconds()+"<br>"); //getMilliseconds return Current Milliseconds
+
+            var now1= new Date();
+            now1.setDate(21); //set next date 
+            document.write(now1+"<br>");
+
+            now1.setFullYear(23); //set next Year
+            document.write(now1+"<br>");
+
+            now1.setMonth(7); //set Month
+            document.write(now1+"<br>");
+
+            document.write(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear()+"<br>");
+
+            
+
+        </script>
+    </body>
+</html>
