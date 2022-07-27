@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+        <h1>Hi, Javascript Developer</h1>
+        
+        <div id="test" class="abd">
+         <form method="" action="">
+            Name:<input type="text" name="name" placeholder="Name" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)"> <br><br>
+            class:<input type="text" name="class" placeholder="Class" id="cname" onfocus="focusFunction(this)" onblur="blurFunction(this)"><br><br>
+            Country:<select onfocus="focusFunction(this)" onblur="blurFunction(this)" id="selctcountry">
+                <option value="india">India</option>
+                <option value="aus">AUS</option>
+                <option value="us">US</option>
+
+            </select><br><br>
+         </form>
+         <div id="inputShow" style="border: 1px solid #ccc;"></div>
+        </div>
+
+    </body>
+    <script>
+        function focusFunction(element){
+            element.style.background="lime";
+        }
+        function blurFunction(element){
+            element.style.background="";
+        }
+        function inputFunction(element){
+            var in_value= element.value;
+            document.getElementById("inputShow").innerHTML=in_value;
+        }
+    </script>
+    <script src="js/formEvents.js"></script>
+</html>
