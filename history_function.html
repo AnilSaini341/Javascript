@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+      
+        <button onclick="nextBtn()">Next Button</button>
+        <button onclick="previousBtn()">Previous Button</button>
+        <button onclick="goBtn()">Go Button</button>
+
+    </body>
+    <script>
+        function nextBtn(){
+            history.forward(); //Move forword
+        }
+        function previousBtn(){
+            history.back();  //Move backword
+        }
+
+        function goBtn(){
+            history.go(-1);  //Move forword and backword (- use for backword) 
+        }
+       
+    </script>
+    
+</html>
