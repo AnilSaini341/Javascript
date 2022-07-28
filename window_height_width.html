@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <style>
+    div#test {
+        width: 150px;
+        height: 150px;
+        background: lightblue;
+    }
+    </style>
+    <body onresize="windowResize()">
+ 
+    </body>
+    <script>
+      function windowResize(){
+        console.clear();
+        var iwidth= window.innerWidth;
+        var iheight=window.innerHeight;
+        var owidth=window.outerWidth;
+        var oheight= window.outerHeight;
+        console.log("Inner Width:"+ iwidth);
+        console.log("Inner Height:"+ iheight);
+        console.log("Outer Width:"+ owidth);
+        console.log("Outer Height:"+ oheight);
+      }
+    </script>
+    
+</html>
