@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+        <button onclick="openWindow()">Open Window</button>
+        <button onclick="closeWindow()" >Close Window</button>
+
+    </body>
+    <script>
+        var mywindow;
+       function openWindow(){
+        mywindow=window.open("https://google.com","","width=500px,height=200px,left=200px,top=200px");
+       } 
+       function closeWindow(){
+        mywindow.close();
+       }
+    </script>
+    
+</html>
