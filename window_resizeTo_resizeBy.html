@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+        <button onclick="openWindow()">Open Window</button>
+        <button onclick="resizeToWindow()">Resize To Window</button>
+        <button onclick="resizeByWindow()">Resize By Window</button>
+        <button onclick="closeWindow()" >Close Window</button>
+
+    </body>
+    <script>
+        var mywindow;
+       function openWindow(){
+        mywindow=window.open("","","width=300px,height=300px,left=50px,top=100px");
+        mywindow.document.write("<p>This is the Test Window.</p>");
+       } 
+
+       function resizeToWindow(){
+        mywindow.resizeTo(200,200); //resizeTo window with fixed position
+        mywindow.focus();
+       }
+
+       function resizeByWindow(){
+        mywindow.resizeBy(250,250); //resizeBy window with relative position
+        mywindow.focus();
+       }
+
+       function closeWindow(){
+        mywindow.close();
+       }
+    </script>
+    
+</html>
