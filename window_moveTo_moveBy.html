@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <title>First Page</title>
+    <body>
+        <button onclick="openWindow()">Open Window</button>
+        <button onclick="moveToWindow()">Move To Window</button>
+        <button onclick="moveByWindow()">Move By Window</button>
+        <button onclick="closeWindow()" >Close Window</button>
+
+    </body>
+    <script>
+        var mywindow;
+       function openWindow(){
+        mywindow=window.open("","","width=500px,height=200px,left=100px,top=100px");
+        mywindow.document.write("<p>This is the Test Window.</p>");
+       } 
+
+       function moveToWindow(){
+        mywindow.moveTo(200,200); //moveTo move window with fixed position
+        mywindow.focus();
+       }
+
+       function moveByWindow(){
+        mywindow.moveBy(250,250); //moveBy move window with relative position
+        mywindow.focus();
+       }
+
+       function closeWindow(){
+        mywindow.close();
+       }
+    </script>
+    
+</html>
